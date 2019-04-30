@@ -14,12 +14,12 @@ Note MRTK = Mixed Reality Toolkit
 - A copy of the [Microsoft Mixed Reality Toolkit v2.0.0 RC1](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)
 
 ## Overview of the course
-- [Getting started](1-Getting-started\TASK1.md)
-- [First application](2-First-application\TASK1.md)
-- [Deployment and test](3-Deployment-and-test\TASK1.md)
-- [Getting data](4-Getting-data\TASK1.md)
-- [VR](5-VR\TASK1.md)
-- [WebVR](6-Web-VR\TASK1.md)
+- [Getting started](1-Getting-started/TASK1.md)
+- [First application](2-First-application/TASK1.md)
+- [Deployment and test](3-Deployment-and-test/TASK1.md)
+- [Getting data](4-Getting-data/TASK1.md)
+- [VR](5-VR/TASK1.md)
+- [WebVR](6-Web-VR/TASK1.md)
 
 ## Important resources
 - [Unity documentation](https://docs.unity3d.com/2018.3/Documentation/Manual/)
