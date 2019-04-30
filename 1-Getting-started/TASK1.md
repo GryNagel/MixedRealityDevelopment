@@ -1,6 +1,6 @@
 # 1 - Getting started
 
-## [📈 Slides](https://grynag.github.io/MixedRealityDevelopment/1-Getting-started/Slides.html#1)
+[📈 Slides](https://grynag.github.io/MixedRealityDevelopment/1-Getting-started/Slides.html#1)
 
 ## Create a new unity project
 :pencil2:  Open Unity, enter a name and a location for your new project. Make sure 3D is selected as template and click **Create project**.
