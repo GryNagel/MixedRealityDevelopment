@@ -1,43 +1,172 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
-    <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-    </style>
+    <title>Introduction to MixedReality development</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../slide-styles/styles.css" />
   </head>
   <body>
-    <textarea id="source">
+    <div>
+      <textarea id="source">
+        layout: true
+        <!-- <div class="my-header"><img src="images/logo_tiny.png" style="height: 30px;"/></div> -->
+        <div class="my-footer"><img class="logo" src="../slide-styles/img/BouvetTagg_MørkOransje_RGB.png"/></div>
+        
+        ---
+        class: center
+        # Introduction to Mixed Reality Development
+        ![Hololens](Screenshots/hololens.png#large)
 
-class: center, middle
+        ---
+        class: center middle
+        # Who are we?
 
-# Title
+        ---
 
----
+        # Agenda
 
-# Agenda
+        1. Introduction
+        2. Unity
+        3. Setting up the MixedReality project
+        4. Creating the first application
+        5. Deployment and testing
+        6. What can we use AR/VR for?
+        7. Overview of devices
+        8. Further development of the application
+        9. Introduction to WebVR (If we have time)
 
-1. Introduction
-2. Deep-dive
-3. ...
+        ---
+        class: split-40
 
----
+        # Software requirements
 
-# Introduction
+        .column-left[
+            ![All the things](Screenshots/allthethings.jpg#medium)
+        ]
+       
+        .column-right[
+        - Visual Studio 2017 (Windows 10 SDK)  
+        - Unity 2018.3.x  
+        - HoloLens emulator  
+        - Mixed Reality Toolkit  
+        ]
+        
+        .block[
+            Find it here: [https://github.com/grynag/MixedRealityDevelopment](https://github.com/grynag/MixedRealityDevelopment) 
+        ]
+        ---
+        class: center
+        # What is Mixed Reality?
+        ![MRARVR](Screenshots/mararvr.jpg#xlarge)
 
-    </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
+        .footnote[
+            Oculus materials used with permission. © 2016 Oculus VR, LLC. All Rights Reserved,
+            Microsoft,
+            IMore        
+        ]
+
+        ???
+        VR: Erstatte
+        AR: Legge til
+        MR: Integrere
+
+        ---
+        class: center
+        # Mixed Reality Devices
+        ![Hololenses](Screenshots/hololenses.jpg#xlarge)
+
+        ---
+        class: center
+        # Mixed Reality Devices
+        ![Hololenses](Screenshots/vrandar.jpg#xlarge)
+
+        ---
+        # What is the Mixed Reality Tookit?
+        - Collection of scripts and components
+        - Makes the start up easier
+        - Version 2 released in April
+
+        ???
+        Litt om den forrige toolkiten, litt om den nye
+
+        ---
+        class: split-60
+        # MRTK High-Level architecture
+        .column-left[
+            ![All the things](Screenshots/architecture.jpg#fill-it)
+        ]
+       
+        .column-right[
+        - «Out of the box»
+        - Testing
+        - Programmatic interface
+        - Documentation
+        - Standardized examples
+        - Cross-platform
+        ]
+
+        ???
+        Device Abstraction Layer
+        Bridge between external SDK’s and the MRTK to conform output/input. Work for different devices. 
+        
+        MRTK Constructs
+        Defines interactions with multiple VR/AR platforms. 
+        
+        MRTK Interface Layer
+        A bridge to coordinate inputs coming from VR devices and controllers. 
+        
+        MRTK User Abstraction layer
+        The SDK front end. Includes pre-build components. Easy to use components/scripts. 
+        
+        “Out of the box”
+        Everything should have tests
+        Programamatic inferface
+        Documentation
+        Standarlized examples
+        
+        The new framework needs to provide “out of the box” components to enable rapid prototyping and development. Future internal changes should not break these components or cause them to degrade in functionality.
+        Every component / feature provided by the framework (either prefab or script) should have corresponding unit tests to validate its functionality. Any future merge to the framework will have to validate these test before merging to ensure there is no degradation of service.
+        The new framework should provide a programmatic interface along side the SDK components, to enable advanced users to extend or replace any component within the framework.
+        Each new interface / component should be fully documented (where possible). These should detail all interactions and intended uses. For the advanced cases, we’ll need to review how we explain how to replace components (e.g. replacing the input system with another, like InControl)
+        Working examples / demos should be created for any specific system, these should have purpose and not just be a “test”.
+        All testing components / scripts / prefabs / scenes should only be retained in the dev branch. The master branch should only contain the “ToolKit” and working examples. Master is for consumers only.
+        Simulator options need to be provided as another device. This will also form the template for new MR/XR/VR devices / SDKs.  
+
+        ---
+        class: center
+        #Mixed Reality Toolkit Roadmap
+        ![Roadmap](Screenshots/roadmap.jpg#xlarge)
+
+        ???
+        MRTK V2 RC ble releaset i april
+
+        ---
+        class: center
+        #Mixed Reality Device Features
+        ![Features](Screenshots/features.jpg#xlarge)
+
+        ???
+
+        ---
+        #Toolkit features
+        
+
+        ---
+        class: center
+        #A few notes
+
+        ???
+
+        ---
+        class: center middle
+        # Setting up a Unity project
+        ## Is everyone set up?
+        
+
+        </textarea
+      >
+    </div>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
     <script>
       var slideshow = remark.create();
     </script>

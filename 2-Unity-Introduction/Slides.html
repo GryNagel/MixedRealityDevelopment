@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to MixedReality development</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../slide-styles/styles.css" />
+  </head>
+  <body>
+    <div>
+      <textarea id="source">
+        layout: true
+        <!-- <div class="my-header"><img src="images/logo_tiny.png" style="height: 30px;"/></div> -->
+        <div class="my-footer"><img class="logo" src="../slide-styles/img/BouvetTagg_MørkOransje_RGB.png"/></div>
+        
+        ---
+        class: center
+        # Introduction to Unity      
+        ![Unity logo](Screenshots/unity.jpg#large)
+        ---
+        # What is Unity?
+        - Real-time engine
+        - Supports a large number of platforms
+        - Advanced editing tool
+        - Can be used for 2D and 3D applications from small games, to enterprise solutions
+        - Designer around a component model
+        - Has it's own asset store
+
+        ---
+
+        # Important concepts
+
+        .active[
+          ## GameObjects
+        ]
+
+        - Every object in your game is a GameObject (E.g. Camera, 3D-models, light).
+        - By giving GameObjects a component you can add properties to it. 
+        - Unity has predefined components, but you can also create your own components by writing scripts
+
+        .inactive[
+          ## Prefabs
+          ## Colliders
+          ## Scenes
+        ]
+
+        ---
+
+        # Important concepts
+
+        .inactive[
+          ## GameObjects
+        ]
+
+        .active[
+          ## Prefabs
+        ]
+
+        - Prefabs is a collection of one or more GameObjects that you can create configure and store
+        - The GameObjects will keep their properties
+        - Makes GameObjects reusable, if you update the prefab all usage of the prefab will be updated 
+
+        .inactive[
+          ## Colliders
+          ## Scenes
+        ]
+
+        ---
+
+        # Important concepts
+
+        .inactive[
+          ## GameObjects
+          ## Prefabs
+        ]
+
+        .active[
+          ## Colliders
+        ]
+
+        - Defines the shape of an object to be used for physical collisions
+        - Invisible, and can have simpler mesh than the object its on
+        - We need to use colliders to be able to interact with 3D models
+
+        .inactive[
+          ## Scenes
+        ]
+
+        ---
+
+        # Important concepts
+
+        .inactive[
+          ## GameObjects
+          ## Prefabs
+          ## Colliders
+        ]
+
+        .active[
+          ## Scenes
+        ] 
+
+        - A level in gaming terms
+        - Contains the environment and menus of your game
+        - Split up an application in different pieces
+
+        ---
+        # User interface
+
+        ![Unity setup](Screenshots/unity_overview_default.png#xlarge)
+
+        ---
+        class: split-50
+
+        # Hierarchy
+
+        .column-left[
+        ![hierarchy](Screenshots/hierarchy.jpg#fill-it)
+        ]
+
+        .column-right[
+        - Shows all your GameObjects in the current scene
+        - Mix of assets and Prefabs
+        - **Parenting:** When creating a group of objects, the topmost object is referred to as the parent. All objects underneath are children.
+        - Children inherit the position, scale and rotation
+        ]
+
+        ---
+        class: split-50
+
+        # Scene
+
+        .column-left[
+        ![Unity setup](Screenshots/hierarchy.jpg#fill-it)
+        ]
+
+        .column-right[
+        - Shows all your GameObjects in the current scene
+        - Mix of assets and Prefabs
+        - **Parenting:** When creating a group of objects, the topmost object is referred to as the parent. All objects underneath are children.
+        - Children inherit the position, scale and rotation
+
+        ]        
+
+        </textarea
+      >
+    </div>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

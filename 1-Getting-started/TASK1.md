@@ -1,5 +1,6 @@
 # 1 - Getting started
 
+## Create a new unity project
 :pencil2:  Open Unity, enter a name and a location for your new project. Make sure 3D is selected as template and click **Create project**.
 
 ![Unity setup](Screenshots/unity_setup.png)
@@ -8,15 +9,15 @@ If you are using the default Unity layout it would look something like this:
 ![Unity layout](Screenshots/unity_overview_default.png)
 Note the panel names. They will be used throughout the tasks. 
 
-Go to **Assets -> Import package -> Custom package** in the toolbar. Import the Microsoft.MixedReality.Tookit.Unity.Foundation-v2.0.0-Beta2.unitypackage downloaded from https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/tag/v2.0.0-RC1.
+## Import the Mixed reality toolkit
+Go to **Assets -> Import package -> Custom package** in the toolbar. Import the Microsoft.MixedReality.Toolkit.Unity.Foundation-v2.0.0-RC1.unitypackage downloaded from https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/tag/v2.0.0-RC1.
 
 Make sure all assets are checked and click **Import**.
 
 Click **Apply** when you are prompted. 
 
-When the assets are done loading go to **File -> Build settings**, double click on Universal Windows Platform and click on Switch platform. 
-
-The Mixed Reality Toolkit assets will give you a new option in the toolbar. Go to **Mixed Reality Toolkit -> Configure**. 
+## Setup the project with Mixed Reality defaults
+The Mixed Reality Toolkit assets will give you a new option in the toolbar. Go to **Mixed Reality Toolkit -> Add to scene and configure...**. 
 
 New entities will appear in your Hierarchy view: 
 
@@ -24,7 +25,10 @@ New entities will appear in your Hierarchy view:
 
 :information_source: The **Directional Light** is not needed for the HoloLens as it does not use lights. But you can keep it there if you want to. The **MixedRealityToolkit** is the configurations. The **MixedRealityPlayspace** contains the camera configurations, event system and Gaze provider.
 
-Save the new Scene by going to **File -> Save scene as**. Give it a name and save it in the scenes folder. 
+## Save the scene
+After the settings are taken care of let's save our scene. We do so by going to **File -> Build settings** and selecting **Save as**. Save the scene inside the scenes folder. We will only be working with one scene when creating our first application so you can call it e.g "Main".
+
+## Check the settings
 
 Click on the **MixedRealityToolkit** in the Hierarchy. The toolkit options will appear in the Inspector. Click on **Copy & customize**.
 
@@ -46,8 +50,12 @@ The *Spatial Awareness System Settings* enables the spatial mapping on the HoloL
 
 *Diagnostics* might be useful when testing our application, so leave that checked. 
 
+## Set Unity build settings
+Go to **File -> Build settings**, double click on Universal Windows Platform and click on Switch platform. 
+
 Next we need take care of some of the project settings in Unity. Go to **File -> Build settings** and click **Add open scenes**. This will make sure our scene is included when we build the application later. 
 
+## The last few settings
 A couple of settings in the Unity settings is also needed. Go to **Edit -> Project settings -> Player**. 
 
 Under **Publishing** settings change the package name. This is the unique name for your application that the HoloLens uses. If you don’t change it and load two different applications they will overwrite each other. 
@@ -60,5 +68,5 @@ Next we need to make sure that the Virtual Reality supported checkbox is checked
 
 That's it for the project settings, we are ready to create an application: 
 
-[Task 2 - Creating an application](TASK2.md) :arrow_forward:
+[2 - 2-Unity-Introduction](../2-Unity-Introduction/TASK1.md) :arrow_forward:
 

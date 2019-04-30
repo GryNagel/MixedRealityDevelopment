@@ -1,5 +1,7 @@
 # Task 2- Creating an application
 
+
+
 We start by adding a 3D model we can manipulate. In this case we will use Chester, the cute penguin, made by Claudelle Girard. You can download Chester :penguin: from the root folder of the repository (https://github.com/grynag/booster-mr-2019/blob/master/chester.fbx). After downloading it, add the model to the project under assets.  
 
 :pencil2: Create an empty object in the Hierarchy and call it something like *SceneContent*. Add Chester under it. Move Chester so that he is visible in the camera (4 meters away is a good starting position). Double click **Main Camera** in the hierarchy window to get a camera preview. 
