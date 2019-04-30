@@ -9,7 +9,6 @@
     <div>
       <textarea id="source">
         layout: true
-        <!-- <div class="my-header"><img src="images/logo_tiny.png" style="height: 30px;"/></div> -->
         <div class="my-footer"><img class="logo" src="../slide-styles/img/BouvetTagg_MørkOransje_RGB.png"/></div>
         
         ---
@@ -130,15 +129,27 @@
         # Scene
 
         .column-left[
-        ![Unity setup](Screenshots/hierarchy.jpg#fill-it)
+        ![Unity setup](Screenshots/scene.jpg#fill-it)
         ]
 
         .column-right[
-        - Shows all your GameObjects in the current scene
-        - Mix of assets and Prefabs
-        - **Parenting:** When creating a group of objects, the topmost object is referred to as the parent. All objects underneath are children.
-        - Children inherit the position, scale and rotation
+        - Interactive view of your GameObjects
+        - You can select, manipulate and modify objects here
+        ]      
+        
+        ---
+        class: split-50
 
+        # Game
+
+        .column-left[
+        ![Unity setup](Screenshots/game.jpg#fill-it)
+        ]
+
+        .column-right[
+        - The view rendered from the camera(s) in your application
+        - You need at least one camera in the scene to control what the player sees
+        - When clicking the play button in the toolbar you can preview and test your application
         ]        
 
         </textarea

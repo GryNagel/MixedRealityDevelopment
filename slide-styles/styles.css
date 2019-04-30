@@ -6,7 +6,6 @@ body { font-family: 'Droid Serif';}
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz';
   font-weight: normal;
- 
 }
 
 h1{
@@ -28,8 +27,8 @@ h2{
 .logo{
   position: absolute;
   right: 0;
-  bottom: 50px;
-  width: 50px;
+  top: 50px;
+  width: 40px;
   height: auto; 
 }
 
@@ -86,7 +85,6 @@ img[src*="#fill-it"] {
 
 .split-40 .column-left {width: 40%}
 .split-40 .column-right {width: 60%}
-
 
 
 /* Fixes */
