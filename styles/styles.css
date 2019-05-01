@@ -32,12 +32,29 @@ h2{
   height: auto; 
 }
 
-.active h2{
+.orange, .active h2{
   color: rgba(205,80,0,1);
 }
 
 .inactive h2{
   color: rgba(69,69,69,0.4) !important;
+}
+
+.code{
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  background: rgba(69,69,69,1);
+  color: white;
+  border-radius: 5px;
+}
+
+.inlineCode{ 
+  background: rgba(69,69,69,1);  
+  border-radius: 5px;
+  color: white; 
+  padding: 0 10px; 
+  display: block;
 }
 
 /* Image sizes */
@@ -99,4 +116,8 @@ img[src*="#fill-it"] {
   bottom: 0;
   left: 10px;
   font-style: italic;
+}
+
+.no-padding .column-left, .no-padding .column-right{
+  padding-top: 0;
 }

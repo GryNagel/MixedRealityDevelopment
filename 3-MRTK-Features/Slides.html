@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to MixedReality development</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <div>
+      <textarea id="source">
+        layout: true
+        <div class="my-footer"><img class="logo" src="../styles/img/BouvetTagg_MørkOransje_RGB.png"/></div>
+        
+        ---
+        class: center
+
+        # Mixed Reality Toolkit Features    
+        ![Unity logo](Screenshots/mrtk_logo.png#large)
+
+        ???
+
+        MRTK-Unity provides a set of foundational components and features to accelerate MR app development in Unity. The latest Release of MRTK (V2) supports HoloLens/HoloLens 2, Windows Mixed Reality, and OpenVR platforms.
+
+        ---
+        class: split-50 no-padding
+
+        # Input methods
+
+
+        .column-left[
+          ## HoloLens 1
+          - Gaze selection
+          - Gestures
+        ]
+
+        .column-right[
+          ## HoloLens 2
+          - Articulated hands
+          - Eye tracking
+        ]
+
+
+        ---
+        class: split-50
+
+        # Button - .orange[Prefab]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_Button_main.png#fill-it)
+        ]
+
+        .column-right[
+        - Supports all available input methods
+        - Used by adding either .inlineCode[```PressableButton.prefab or PressableButtonPlated.prefab```]
+        ]
+
+        ---
+        class: split-50
+
+        # Bounding Box - .orange[Script] 
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_BoundingBox_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - Handles functionality for transforming objects
+        - Adds handles to the edges 
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Manipulation Handler - .orange[Script]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_Manipulation_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - Allows objects to be movable, scalable and rotatable using one or two hands
+        - Can restrict which of the transformations are allowed
+        - Objects must have a collider
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Slate - .orange[Prefab]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_Slate_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - Windows style for 2D content
+        - Grabbable , "Follow me" and close buttons
+        ]
+
+        
+        ---
+        class: split-50
+
+        # System Keyboard - .orange[Script]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_SystemKeyboard_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - You can invoke the systems keyboard by using a script
+        - HoloLens 2 keyboard supports direct hand interactions
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Interactable - .orange[Script]
+
+        .column-left[
+        ![Unity logo](Screenshots/InteractableExamples.png#fill-it)
+        ]
+
+        .column-right[
+        - Interactable adds events to GameObjects
+        - GameObjects must have a collider
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Solver - .orange[Scripts]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_Solver_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - A range of object behaviors: tag-along, surface magnetism and momentumn
+        ]
+
+        
+        ---
+        class: split-50 no-padding
+
+        # Object Collection - .orange[Script]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_ObjectCollection_Main.png#fill-it)
+        ![Unity logo](Screenshots/oc_ex.jpg#fill-it)
+        ]
+
+        .column-right[
+        - Helps to layout an array of objects in predefined three-dimensional shapes
+        - Supports: plane, cylinder, sphere, scatter and radial
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Tooltip - .orange[Prefab and Script]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_Tooltip_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - Is used to label objects or convey hints or extra information when inspecting an object
+        ]
+
+        
+        ---
+        class: split-50
+
+        # App Bar - .orange[Prefab]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_AppBar_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - Used with bounding box
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Pointers - .orange[Prefab and script]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_Pointer_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - Pointers are attached to controllers (or gaze) to give feedback to the user and gives us the ability to interact with the right object
+        - GameObjects must have colliders to receive  focus
+        - Pointers are instantiated automatically at runtime
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Fingertip Visualization - .orange[Prefab]
+
+        .column-left[
+        ![Unity logo](Screenshots/MRTK_FingertipVisualization_Main.png#fill-it)
+        ]
+
+        .column-right[
+        - For HoloLens 2
+        - Helps the user recognize the distance from the target
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Eye-Supported Target Selection - .orange[Script]
+
+        .column-left[
+        ![Unity logo](Screenshots/mrtk_et_targetselect.png#fill-it)
+        ]
+
+        .column-right[
+        - Allows the user to select objects by using their eyes
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Eye-Supported Navigation in MRTK - .orange[Scripts]
+
+        .column-left[
+        ![Unity logo](Screenshots/mrtk_et_navigation.png#fill-it)
+        ]
+
+        .column-right[
+        - For HoloLens 2
+        - Enables auto scroll, auto zoom and attention-based 3D rotation
+        ]
+
+        
+        ---
+        class: split-50
+
+        # Visualizing Eye Tracking Data in MRTK 
+
+        .column-left[
+        ![Unity logo](Screenshots/mrtk_et_heatmaps.png#fill-it)
+        ]
+
+        .column-right[
+        - For HoloLens 2
+        - Shows a heatmap of where the user is looking in both real time and recorded
+        ]
+
+        ---
+        class: center middle
+
+        # Try it out
+        ## Find the tasks at: [https://github.com/grynag/MixedRealityDevelopment](https://github.com/grynag/MixedRealityDevelopment)
+
+        </textarea
+      >
+    </div>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

@@ -51,6 +51,3 @@ To change the color on the quad, you can search for "MRTK" in the project panel.
 Find the one of the **MRTK**-standard shaders in the project view. Drag and drop it on to the Quad in the hierarchy panel or select the quad and add it to the shader in the inspector. Move and scale the **Placard** and **Quad** as you see fit. 
 
 To get some text on the **Placard** add an empty object called text under the **Placard**. Add a **Text mesh**-component. Set the scaling to 0,005 in all axis, font size to 100 and add some text. Add the **selawk** font to the **Text mesh**. Set the z-position to -0,01. You can change the text mesh **anchor** and **alignment** to center the text. 
-
-:arrow_backward: [Task 1 - Creating a new project in Unity](TASK1.md) | 
-[Task 3 - Deploying to the HoloLens emulator](TASK3.md) :arrow_forward:

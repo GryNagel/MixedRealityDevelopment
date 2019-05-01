@@ -3,16 +3,17 @@
   <head>
     <title>Introduction to MixedReality development</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../slide-styles/styles.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
   </head>
   <body>
     <div>
       <textarea id="source">
         layout: true
-        <div class="my-footer"><img class="logo" src="../slide-styles/img/BouvetTagg_MørkOransje_RGB.png"/></div>
+        <div class="my-footer"><img class="logo" src="../styles/img/BouvetTagg_MørkOransje_RGB.png"/></div>
         
         ---
         class: center
+
         # Introduction to Unity      
         ![Unity logo](Screenshots/unity.jpg#large)
         ---
@@ -24,6 +25,105 @@
         - Designer around a component model
         - Has it's own asset store
 
+        ---
+
+        # User interface
+
+        ![Unity setup](Screenshots/unity_overview_default.png#xlarge)
+
+        ---
+        class: split-50
+
+        # Hierarchy
+
+        .column-left[
+        ![hierarchy](Screenshots/hierarchy.jpg#fill-it)
+        ]
+
+        .column-right[
+        - Shows all your GameObjects in the current scene
+        - Mix of assets and Prefabs
+        - **Parenting:** When creating a group of objects, the topmost object is referred to as the parent. All objects underneath are children.
+        - Children inherit the position, scale and rotation
+        ]
+
+        ---
+        class: split-50
+
+        # Scene
+
+        .column-left[
+        ![Unity setup](Screenshots/scene.jpg#fill-it)
+        ]
+
+        .column-right[
+        - Interactive view of your GameObjects
+        - You can select, manipulate and modify objects here
+        ]      
+        
+        ---
+        class: split-50
+
+        # Game
+
+        .column-left[
+        ![Unity setup](Screenshots/game.jpg#fill-it)
+        ]
+
+        .column-right[
+        - The view rendered from the camera(s) in your application
+        - You need at least one camera in the scene to control what the player sees
+        - When clicking the play button in the toolbar you can preview and test your application
+        ]     
+        
+        ---
+        class: split-50
+
+        # Project
+
+        .column-left[
+        ![Unity setup](Screenshots/project.jpg#fill-it)
+        ]
+
+        .column-right[
+        - Manage assets in your application
+        - The left pane shows the folder structure
+        - The right panel shows the assets as icons
+        ]
+
+        ---
+        class: split-50
+
+        # Console
+
+        .column-left[
+        ![Unity setup](Screenshots/console.jpg#fill-it)
+        ]
+
+        .column-right[
+        - Shows logs, error messages and warnings.
+        - Useful when debugging, and we can write our own messages by using:
+        .code[
+        ``Debug.Log, Debug.LogWarning and Debug.LogError ``
+        ]        
+        ]
+
+        ---
+        class: split-50 no-padding
+
+        # Inspector
+
+        .column-left[
+        ![Unity setup](Screenshots/inspector.jpg#fill-it)
+        ]
+
+        .column-right[
+        - Displays detailed information about the currently selected GameObjects with all it's components
+        - Add and edit components on the GameObject
+        - We can add variables in scripts that we can use in the Inspector
+        ]        
+        ]
+        
         ---
 
         # Important concepts
@@ -103,54 +203,68 @@
         - Split up an application in different pieces
 
         ---
-        # User interface
+        class: middle center
 
-        ![Unity setup](Screenshots/unity_overview_default.png#xlarge)
-
-        ---
-        class: split-50
-
-        # Hierarchy
-
-        .column-left[
-        ![hierarchy](Screenshots/hierarchy.jpg#fill-it)
-        ]
-
-        .column-right[
-        - Shows all your GameObjects in the current scene
-        - Mix of assets and Prefabs
-        - **Parenting:** When creating a group of objects, the topmost object is referred to as the parent. All objects underneath are children.
-        - Children inherit the position, scale and rotation
-        ]
-
-        ---
-        class: split-50
-
-        # Scene
-
-        .column-left[
-        ![Unity setup](Screenshots/scene.jpg#fill-it)
-        ]
-
-        .column-right[
-        - Interactive view of your GameObjects
-        - You can select, manipulate and modify objects here
-        ]      
+        # Demo / Try it out
         
+        ???
+
+        Add GameObject (some kind of 3d object)
+        Rotate/Scale/Translate
+
+        Add a child object show inheritance
+        Create and add material
+
         ---
-        class: split-50
+        class: split-60
 
-        # Game
-
+        # Scripting
+        
         .column-left[
-        ![Unity setup](Screenshots/game.jpg#fill-it)
+          .code[
+          ```
+          using UnityEngine;
+          using System.Collections;
+          
+          public class MainPlayer : MonoBehaviour {
+          
+              // Use this for initialization
+              void Start () {
+              
+              }
+              
+              // Update is called once per frame
+              void Update () {
+              
+              }
+          }
+          ```
+          ]
         ]
 
         .column-right[
-        - The view rendered from the camera(s) in your application
-        - You need at least one camera in the scene to control what the player sees
-        - When clicking the play button in the toolbar you can preview and test your application
-        ]        
+        - This is how a script looks when adding it
+        - Two main loops: Start and Update
+        ]
+
+        ???
+
+        Start: transform.position = new Vector3(transform.position.x, transform.position.y + fallHeight, transform.position.z); 
+
+        Add a collider to the cube
+        Add a plane
+        Debug: 
+        void OnCollisionEnter(Collision collision)
+        {
+            GameObject otherObj = collision.gameObject;
+            Debug.Log("Collided with: " + otherObj);
+        }
+    
+        void OnTriggerEnter(Collider collider)
+        {
+            GameObject otherObj = collider.gameObject;
+            Debug.Log("Triggered with: " + otherObj);
+        }
 
         </textarea
       >

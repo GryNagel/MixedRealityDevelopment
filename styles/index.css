@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+html{
+    font-family: 'Droid Serif';
+}
+
+body{
+    background: rgba(69,69,69,0.1);
+    font-size: 25px;
+    padding: 100px;
+    width: 60%; 
+    margin: 0 auto; 
+}
+
+h1{
+    font-family: 'Yanone Kaffeesatz';
+    font-weight: normal;
+    color: rgba(69,69,69,1);
+    font-size: 50px;
+}
+
+ul{
+    padding: 0; 
+}
+
+li{
+    list-style-type: none;
+    padding: 10px 0;
+    display: block; 
+}
+
+a, a:visited{
+    color: rgba(69,69,69,1);
+}
+
+a:hover{
+    color:  rgba(205,80,0,1);
+}

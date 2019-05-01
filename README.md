@@ -4,22 +4,24 @@ The goal of this course is to set up a new Mixed Reality project by using the [M
 
 Note MRTK = Mixed Reality Toolkit
 
-## [See the full installation guide here](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools)
+## [⚙️ See the full installation guide here](https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools)
 
-## Software requirements
+## 📝 Software requirements
 - Windows 10 (developer mode [enabled](https://www.ghacks.net/2015/06/13/how-to-enable-developer-mode-in-windows-10-to-sideload-apps/))
 - [Visual studio 2017](https://developer.microsoft.com/en-us/windows/downloads) with the Windows 10 SDK, C++ Build tools and Universal Windows Platform Development (remember to check it in the Visual Studio Installer when installing)
 - [Unity](https://unity3d.com/get-unity/download/archive) (Version 2018.3.x recommended)
 - [HoloLens emulator](https://docs.microsoft.com/en-us/windows/mixed-reality/hololens-emulator-archive)
 - A copy of the [Microsoft Mixed Reality Toolkit v2.0.0 RC1](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)
 
-## Overview of the course
-- [Getting started](1-Getting-started/TASK1.md)
-- [First application](2-First-application/TASK1.md)
-- [Deployment and test](3-Deployment-and-test/TASK1.md)
-- [Getting data](4-Getting-data/TASK1.md)
-- [VR](5-VR/TASK1.md)
-- [WebVR](6-Web-VR/TASK1.md)
+## [📺 Overview of the slides here](https://grynag.github.io/MixedRealityDevelopment/)
 
-## Important resources
+## ✏️ Tasks
+- [Getting started](1-Getting-started/TASK1.md) - We do this together
+- [Unity Introduction](2-Unity-Introduction/TASK1.md)
+- [MRTK Features/Creating an application](3-MRTK-Features/TASK1.md)
+- [Deployment and test](3-Deployment-and-test/TASK1.md)
+- [VR](5-VR/TASK1.md)
+
+## ❗️ Important resources
 - [Unity documentation](https://docs.unity3d.com/2018.3/Documentation/Manual/)
+- [MRTK documentation](https://github.com/Microsoft/MixedRealityToolkit-Unity)
