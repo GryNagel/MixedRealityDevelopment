@@ -17,7 +17,7 @@ Note MRTK = Mixed Reality Toolkit
 
 ## ✏️ Tasks
 - [Getting started](1-Getting-started/TASK1.md) - We do this together
-- [Unity Introduction](2-Unity-Introduction/TASK1.md)
+- [Unity Introduction](2-Unity-Introduction/TASK1.md) - We do this together
 - [MRTK Features/Creating an application](3-MRTK-Features/TASK1.md)
 - [Deployment and test](4-Deployment-and-test/TASK1.md)
 - [VR](6-VR/TASK1.md)
