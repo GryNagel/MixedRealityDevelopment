@@ -2,8 +2,8 @@
 
 [📺 Slides](https://grynag.github.io/MixedRealityDevelopment/2-Unity-Introduction/Slides.html#1)
 
-## Create a parent object
-Right click in the Hierarchy pane and select create empty. Call it  ```Holgrams```.  
+## ✏️ Create a parent object
+Right click in the Hierarchy pane and select create empty. Call it  ```Playspace```.  
 ![Parent](Screenshots/Parent.jpg)
 
 We will add our other Holograms inside this GameObject. 
@@ -15,13 +15,13 @@ Set the transform of the parent as you see in the screenshot:
 
 ❗️ The position set in meters (4 meters). The reason for setting 4 meters is so that the object spawns in 4 meters in front of the camera in the HoloLens.
 
-## Create a child object
+## ✏️ Create a child object
 Add a cube underneath the Holograms GameObject by using the same method as we did in the previous task. 
 
 By default the cube has a Mesh Renderer, a Box Collider and a Default Material.   
 ![cubeprops](Screenshots/cubeprops.jpg)
 
-## Add a material
+## ✏️ Add a material
 Create a new folder in the Project pane called `Materials`:  
 ![materials](Screenshots/materials.jpg)
 
@@ -37,7 +37,7 @@ Click on the white square and select a color of your choice.
 
 Drag the material onto the cube we created earlier in the scene view. 
 
-## Creating our first script
+## ✏️ Creating our first script
 Create a new folder called `Scripts`.
 
 Inside it add a script `called MoveCube`. 
@@ -91,9 +91,11 @@ Next lets add a Rigidbody to the cube. We do that by making sure our cube is sel
 
 ℹ️ Rigidbody makes the object be affected by gravity.
 
+Now we can make the cube reusable as a prefab. Create a new folder called `Prefabs` and drag the cube into it. Then add the prefab to the scene so that you have two cube. Place them side by side, and give them different fallHeight values.
+
 Press play again and see what happens. 
 
-## Creating another collider
+## ✏️ Creating another collider
 As you can see our cube falls and disappears out of sight. It doesn't have anything to stop it. Let's fix that.
 
 Start by adding a new GameObject under Holograms of the type `Plane`. 
@@ -104,7 +106,7 @@ Add a material to the Plane by creating a new material in the materials folder a
 
 The plane already has a collider, let's take advantage of the Unity console to see what happens. 
 
-## Creating a debug script
+## ✏️ Creating a debug script
 Create a new script in the Scripts-folder and call it Trigger. Open the script and add the following code:
 
 ```C#
