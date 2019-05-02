@@ -42,8 +42,8 @@ Inside it we need two functions: one to move the cube left or right (you can als
 
 We will attach the script to the cube, so we can assume that when modifying the transform we don't need to think about targeting a GameObject.
 
-⭐️ If you are comfortable with writing code, try it out. If you get stuck just ask, or check out the Unity documentation: [Unity docs](https://docs.unity3d.com/2018.3/Documentation/Manual/).
+Try it out! If you get stuck just ask, or check out the Unity documentation: [Unity docs](https://docs.unity3d.com/2018.3/Documentation/Manual/). 
 
 One of the ways to solve this can be found here: https://github.com/grynag/MixedRealityDevelopmentDemos
 
-[Move along ▶](TASK2.md)️
+[4 Deployment and testing](../4-Deployment-and-test/TASK1.md) :arrow_forward:
