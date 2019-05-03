@@ -70,5 +70,5 @@ Next we need to make sure that the Virtual Reality supported checkbox is checked
 
 That's it for the project settings, we are ready to create an application: 
 
-[2 - 2-Unity-Introduction](../2-Unity-Introduction/TASK1.md) :arrow_forward:
+[2 Unity introduction](../2-Unity-Introduction/TASK1.md) :arrow_forward:
 
