@@ -32,11 +32,11 @@ h2{
   height: auto; 
 }
 
-.orange, .active h2{
+.orange, .active h2, .active h3, .active h4{
   color: rgba(205,80,0,1);
 }
 
-.inactive h2{
+.inactive h2, .inactive h3, .inactive h4{
   color: rgba(69,69,69,0.4) !important;
 }
 
@@ -83,6 +83,12 @@ img[src*="#fill-it"] {
   padding: 0;
 }
 
+img[src*="#fill-it-vertical"] {
+  height:400px;
+  width:auto;
+  padding: 0;
+}
+
 
 
 /* Columns */
@@ -120,4 +126,65 @@ img[src*="#fill-it"] {
 
 .no-padding .column-left, .no-padding .column-right{
   padding-top: 0;
+}
+
+/* Blockquote */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:10px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: rgba(69,69,69,1);
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid rgba(205,80,0,1) ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:rgba(69,69,69,0.2);
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote .speaker{
+  display:block;
+  color:rgba(69,69,69,0.8);
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+/* table */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 3px solid white;
+}
+
+th{
+  background-color: rgba(205,80,0, 1);
+  color: white
+}
+
+th, td {
+  text-align: left !important;;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(205,80,0, 0.2);
 }
