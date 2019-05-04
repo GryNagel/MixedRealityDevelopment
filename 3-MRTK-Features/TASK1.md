@@ -6,6 +6,12 @@ Let's try out some of the buttons from the Mixed Reality toolkit.
 
 First create a new Scene called `Buttons`.
 
+When creating a new scene you should be prompted with: 
+
+![add mrtk](Screenshots/addMRTK.jpg)
+
+Click the small circle on the right of `None (Mixed Reality Toolkit Configuration Profile)` and select the profile we created in the previous task and click `Yes`. This will import the Mixed Reality Toolkit and default GameObjects. 
+
 Add a new empty GameObject called `Playspace`.
 
  Remember to check the parent position.
