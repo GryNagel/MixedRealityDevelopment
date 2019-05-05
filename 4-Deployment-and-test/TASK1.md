@@ -20,7 +20,3 @@ If all goes well your application should be deployed to the HoloLens emulator.
 :information_source: Even though the emulator might work fine for development I would recommend to build and test often on the HoloLens itself if you have one available. This will prevent you from spending time adjusting the GUI just to find that the sizing and positioning does not work in the HoloLens, or that some features that work in the emulator might not work on the device itself. 
 
 :information_source: The build and deploy process will be the same for deploying to the HoloLens.
-
-❗️ As of now if we want to build to the HoloLens 1 we need to set the Target SDK Version to 10.0.17134.0. We do this under **File -> Build settings**. If we want to build for the HoloeLens 2 we need [Windows 10 SDK (10.0.18362.0)](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) (can't be installe via Visual Studio yet).
-   
-![Build/Deploy settings](Screenshots/targetv.jpg)
