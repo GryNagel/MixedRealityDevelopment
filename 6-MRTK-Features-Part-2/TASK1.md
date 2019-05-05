@@ -1,7 +1,9 @@
 # Manipulation and Tooltips
 
+MRTK docs: [Manipulation Handler](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_ManipulationHandler.md) and [Tooltip](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Tooltip.md)
+
 ## ✏️ Create a new scene
-Create a new scene called `Manipulation`
+Create a new scene called `2_Manipulation`
 
 ## ✏️ Adding a 3D-model
 We start by adding a 3D model we can manipulate. In this case we will use Chester, the cute penguin, made by Claudelle Girard. You can download Chester :penguin: from the root folder of the repository (https://github.com/grynag/MixedRealityDevelopment/blob/master/Assets/chester.fbx). After downloading it, create a new folder in the Project Pane called `Assets` and add Chester to it.  
@@ -27,7 +29,7 @@ Search for *ManipulationHandler* in the project panel and drag and drop it insid
 
 The manipulation handler has a set of properties we can change:  
 
-![ManipulationHandler](Screenshots/manipulationhandler.jpg).
+![ManipulationHandler](Screenshots/manipulationhandler.jpg)
 
 Take a look through the different options. The MRTK takes care of the events for us and allows us to use the HoloLens gestures to manipulate the 3d-object. 
 
@@ -49,7 +51,13 @@ Under **Tool Tip Script -> Content settings** add text (ex. One hand) describing
 
 Repeat for the second Chester, this time with another tool tip text (ex. Two hands). Make sure that the wingtip you select belongs to the correct Chester (a line from the tool tip to the connected Chester should be visible in the scene). 
 
-Build and deploy the application to either the HoloLens 1 or HoloLens 2 emulator. Ask us if you want to test the application on the HoloLens (we have it pre-built there).
+Build and deploy the application to either the HoloLens 1 or HoloLens 2 emulator. Now that we have two scenes in our project, only one of them will be started.
+
+
+To build the new scene you need to add it to the in the **Files -> Builds settings**:   
+![Change scene](Screenshots/changescene.jpg)
+
+❗️ Ask us if you want to test the application on the HoloLens (we have our version pre-built there).
 
 One solution can be found here: 
 

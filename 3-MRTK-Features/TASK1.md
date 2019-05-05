@@ -1,10 +1,12 @@
 # Task 2 - Mixed Reality Toolkit Features
 
+MRTK docs: [Button](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_Button.md)
+
 ## ✏️ Create a new scene and add parent object
 
 Let's try out some of the buttons from the Mixed Reality toolkit.
 
-First create a new Scene called `Buttons`.
+First create a new Scene called `1_Buttons`.
 
 When creating a new scene you should be prompted with: 
 

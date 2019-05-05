@@ -28,7 +28,7 @@ New entities will appear in your Hierarchy view:
 :information_source: The **Directional Light** is not needed for the HoloLens as it does not use lights. But you can keep it there if you want to. The **MixedRealityToolkit** is the configurations. The **MixedRealityPlayspace** contains the camera configurations, event system and Gaze provider.
 
 ## Save the scene
-After the settings are taken care of let's save our scene. We do so by going to **File -> Build settings** and selecting **Save as**. Save the scene inside the scenes folder. We will only be working with one scene when creating our first application so you can call it e.g "Main".
+After the settings are taken care of let's save our scene. We do so by going to **File -> Build settings** and selecting **Save as**. Save the scene inside the scenes folder. Call it `UnityIntroduction`
 
 ## Check the settings
 
