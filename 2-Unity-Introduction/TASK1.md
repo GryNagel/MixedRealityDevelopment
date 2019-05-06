@@ -2,8 +2,6 @@
 
 [📺 Slides](https://grynag.github.io/MixedRealityDevelopment/2-Unity-Introduction/Slides.html#1)
 
-
-
 ## ✏️ Create a parent object
 Right click in the Hierarchy pane and select create empty. Call it  ```Playspace```.  
 ![Parent](Screenshots/Parent.jpg)
