@@ -21,8 +21,7 @@ Note MRTK = Mixed Reality Toolkit
 - [Unity Introduction](2-Unity-Introduction/TASK1.md) - We do this together
 - [MRTK Features/Creating an application](3-MRTK-Features/TASK1.md)
 - [Deployment and test](4-Deployment-and-test/TASK1.md) - We do this together
-- [MRTK Features/Creating an application](3-MRTK-Features-Part-2/TASK1.md)
-- [VR](6-VR/TASK1.md)
+- [MRTK Features part 2](3-MRTK-Features-Part-2/TASK1.md)
 
 ## ❗️ Important resources
 - [Unity documentation](https://docs.unity3d.com/2018.3/Documentation/Manual/)
