@@ -1,43 +1,53 @@
-# Solver
-
+# Solver and API
 
 ## ✏️ Create a new scene and parent components
-Create a new scene in the scenes folder called `4_Solver`.
+Create a new scene in the scenes folder called `4_API`.
 
 Add an empty GameObject called `Playspace`.
 
-## ✏️ Create a menu
-Create a new empty GameObject called `Menu`.
+## ✏️ Create a pane
+Create a new empty GameObject called `Weather` inside `Playspace`
 
 Try to recreate this:   
 ![Menu](Screenshots/menu.jpg)
 
 Some pointers: cube, Text mesh pro and a MRTK material.
 
+The title and the weather text should be two different components so we can change the text by script later. 
+
 ## ✏️ Add a solver
-When creating a menu like this, we can make it turn toward the user as the user moves around, and stay inside the viewport. 
+When creating a pane like this, we can make it turn toward the user as the user moves around, and stay inside the viewport. 
 
 To do this we first add the `Solver Handler`-script to the `Menu`-GameObject. 
 
 Next we add the `Radial view`-script. 
 
-Test it in `Play mode` and tweak the settings until you think it works as it should. 
+Test it in `Play mode` and tweak the settings until you think they are OK. I'd recommend trying to build this application and try it on the HoloLens at a later stage, to see if the pane works as you think it would while testing in Play mode. 
 
-## ✏️ Create a couple of prefabs
+## ✏️ Get data from API
+Create a new script called `WeatherData`.
 
-Find some 3D-models here: [https://poly.google.com/](https://poly.google.com/) and import them to the `Assets`-folder. 
+We are going to use [https://openweathermap.org/](https://openweathermap.org/)s API to get weather data. 
 
-️️️️️❗️ Remember that the HoloLens has limited processing power, so don't take the most advanced 3D models. 
+First you need to get an API-key. See the instructions here: [https://openweathermap.org/appid#get](https://openweathermap.org/appid#get).
 
-Add the 3D-model to the Hierarchy, give it the `Manipulation handler`-script and scale it to a sensible size. Create a prefab of the 3D-model. 
+Use the [UnityEngine.Networking](https://docs.unity3d.com/2018.3/Documentation/ScriptReference/Networking.UnityWebRequest.html) to make a request to openweathermap.org to get the data. 
 
-## ✏️ Create a script
-Create a new script called `Prefab`-spawner and create a script that takes in a GameObject (prefab) and spawns an instance of it.
+The URL would look something like this: `https://api.openweathermap.org/data/2.5/weather?q=Stavanger&units=metric&appid={YOURAPIKEY}`
 
-## ✏️ Spawn the prefabs
+Next create a new folder called `Plugins`. Create a script called `SimpleJSON` inside it and add the content from [here](https://github.com/Bunny83/SimpleJSON/blob/master/SimpleJSON.cs).
 
-Add buttons or 3D objects to the `Menu` that runs the spawn prefab function.
+Use SimpleJSON to parse the JSON response and print it to the Location, weather description and temperature to the weather info text you added earlier. 
 
-⭐️ Add different prefabs, spawn the prefabs in different locations, build an AppX and try it on the HoloLens (remember to change the Template 3D).
+## ✏️ Add a keyboard
+The MRTK has a [keyboard](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_SystemKeyboard.md) we can use to get input from the user. 
 
-[Move along ▶](TASK.md)️
+Add the keyboard to an on click function (either a custom element or use a button).
+
+If you have previously added the api call to the onStart function, move it so we can also run it on a button.
+
+Add the users keyboard input to the URL.
+
+Create a search button so that the user can run the function you created.
+
+Build the application as AppX and try it on the HoloLens. 
