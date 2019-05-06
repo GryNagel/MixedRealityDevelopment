@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction to MixedReality development</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <div>
+      <!-- ![Unity logo](Screenshots/mrtk_logo.png#large) -->
+      <textarea id="source">
+        layout: true
+        <div class="my-footer"><img class="logo" src="../styles/img/BouvetTagg_MørkOransje_RGB.png"/></div>
+        
+        ---
+        class: center
+
+        # WebVR
+
+        ![A-frame logo](Screenshots/aframe-logo.png#fill-it-vertical)
+
+        ???
+
+        ---
+        
+        # What is A-Frame?
+
+        - Web framework for building VR
+        - Using HTML
+        - Works on Vive, Rift, Daydream, GearVR, Mixed Reality VR headsets and desktop (even Edge!)
+        - Easy to use and start
+
+        ---
+
+        # Basic example code
+
+        .code[
+        ```HTML
+        <html>
+          <head>
+            <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+          </head>
+          <body>
+            <a-scene>
+              <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+              <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+              <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+              <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+              <a-sky color="#ECECEC"></a-sky>
+            </a-scene>
+          </body>
+        </html>
+        ```
+        ]
+
+        ---
+
+        # Basic example UI
+
+        ![aframe scene](Screenshots/aframe.jpg#fill-it)
+
+        ---
+        
+
+        </textarea
+      >
+    </div>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
